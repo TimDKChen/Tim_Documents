@@ -27,4 +27,8 @@ export default Test;
 
 #### The result is shown below:
 
-#### When we want to pass ref to HOC(Higher Order Components), we should wrap its parent components with forwardRef. And it will works.
+#### When we want to pass ref to HOC(Higher Order Components), we should wrap its parent components with forwardRef.And it will works.
+#### Conclusion:<br/>
+1. when ref is referenced in HTML DOM, the element will store in { current: DOM }
+2. when ref is referenced by class components, ref will accept mounted instantiation in { current: instantiation }
+3. ref can not be referenced in a function component, due function component does not have instantiation
